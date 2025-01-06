@@ -1,0 +1,48 @@
+
+.card-diri {
+    display: flex;
+    align-items: center;
+    width: 75%;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+
+.card-pasfoto {
+    margin-right: 20px;
+    width: 150px;
+    height: 150px;
+}
+
+.card-pasfoto img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+
+.card-content {
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start;
+}
+
+
+.card-content h1 {
+    margin: 0 0 10px 0;
+    font-size: 24px;
+    color: #333;
+}
+
+
+.desc-diri {
+    margin: 0;
+    font-size: 16px;
+    color: #555;
+}
