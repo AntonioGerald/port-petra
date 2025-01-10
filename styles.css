@@ -12,6 +12,19 @@
     padding: 20px;
 }
 
+.card-prestasi {
+    width: 100%;
+    margin: 10px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    padding: 20px;
+}
+
 
 .card-pasfoto {
     margin-right: 20px;
@@ -40,9 +53,55 @@
     color: #333;
 }
 
-
 .desc-diri {
     margin: 0;
     font-size: 16px;
     color: #555;
 }
+
+
+.prestasi-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+
+.prestasi{
+    width: 95%;
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.prestasi::-webkit-scrollbar{
+    display: none;
+}
+
+
+.scroll-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    z-index: 10;
+  }
+  
+  .scroll-btn.left {
+    left: 10px;
+  }
+
+  .scroll-btn.right {
+    right: 10px;
+  }
+
+  .scroll-btn:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
