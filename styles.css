@@ -1,3 +1,8 @@
+a img{
+    width:  50px;
+    height:  50px;
+    object-fit: cover;
+}
 
 .card-diri {
     display: flex;
@@ -13,6 +18,7 @@
 }
 
 .card-prestasi {
+    overflow: hidden;
     width: 95%;
     margin: 10px;
     background-color: #f0f0f0;
