@@ -1,39 +1,39 @@
-const prestasi = document.querySelector('.prestasi');
-const prestasiContainer = document.querySelectorAll('.prestasi-container'); 
+const prestasi = document.querySelector('.prestasi'); 
+const prestasiContainer = document.querySelector('.prestasi-container'); 
+const scroll = 2;
+const cards = document.querySelectorAll('.card-prestasi'); 
 
 
-const prestasiWidth = prestasiContainer[0].offsetWidth + parseInt(getComputedStyle(cards[0]).marginRight);
-
+const prestasiWidth = (cards[0].offsetWidth + parseInt(getComputedStyle(cards[0]).marginRight)) * scroll;
 
 function scrollKiri() {
-    prestasi.scrollBy({
-    left: -cardWidth,
-    behavior: 'smooth',
-  });
+    prestasiContainer.scrollBy({
+        left: -prestasiWidth,
+        behavior: 'smooth',
+    });
 }
 
 function scrollKanan() {
-    prestasi.scrollBy({
-    left: cardWidth,
-    behavior: 'smooth',
-  });
+    prestasiContainer.scrollBy({
+        left: prestasiWidth,
+        behavior: 'smooth',
+    });
 }
-
 
 const leftBtn = document.querySelector('.scroll-btn.left');
 const rightBtn = document.querySelector('.scroll-btn.right');
 
 function updateButtons() {
-    console.log('ScrollLeft:', cardWrapper.scrollLeft);
-    console.log('ScrollWidth:', cardWrapper.scrollWidth);
-    console.log('OffsetWidth:', cardWrapper.offsetWidth);
+    console.log('ScrollLeft:', prestasiContainer.scrollLeft);
+    console.log('ScrollWidth:', prestasiContainer.scrollWidth);
+    console.log('OffsetWidth:', prestasiContainer.offsetWidth);
   
-    leftBtn.disabled = cardWrapper.scrollLeft === 0;
+    leftBtn.disabled = prestasiContainer.scrollLeft === 0;
     rightBtn.disabled =
-      cardWrapper.scrollLeft + cardWrapper.offsetWidth >= cardWrapper.scrollWidth;
+    prestasiContainer.scrollLeft + prestasiContainer.offsetWidth >= prestasiContainer.scrollWidth;
   }
   
 
-cardWrapper.addEventListener('scroll', updateButtons);
+  prestasiContainer.addEventListener('scroll', updateButtons);
 
 updateButtons();

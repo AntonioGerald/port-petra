@@ -13,7 +13,7 @@
 }
 
 .card-prestasi {
-    width: 100%;
+    width: 95%;
     margin: 10px;
     background-color: #f0f0f0;
     border: 1px solid #ccc;
@@ -60,7 +60,7 @@
 }
 
 
-.prestasi-container {
+.prestasi {
     display: flex;
     align-items: center;
     position: relative;
@@ -68,7 +68,7 @@
     overflow: hidden;
   }
 
-.prestasi{
+.prestasi-container{
     width: 95%;
     display: flex;
     overflow-x: auto;
