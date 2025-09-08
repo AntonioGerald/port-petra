@@ -1,69 +1,132 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Petra Antonio Gerald - Junior Fullstack Developer</title>
     <link rel="stylesheet" href="styles.css">
-    <title>Portofolio</title>
 </head>
 <body>
-    <div class="card-diri">
-        <div class="card-pasfoto">
-            <img src="images/pas foto petra (1).png" alt="Pas Foto Petra">
-        </div>
-        <div class="card-content">
-            <h1>Petra Antonio Gerald</h1>
-            <div class="desc-diri">
-                <p>Kenalin gw petra</p>
-            </div>
-        </div>
-    </div>
-    
-    <h1>Prestasi</h1> 
-    <div class="prestasi">
-        <button class="scroll-btn left" onclick="scrollKiri()">&#9664;</button>
-        <div class="prestasi-container">
-    
-            <!--Prestasi 1-->
-            <div class="card-prestasi">
-                <div class="card-pasfoto">
-                    <img src="images/lcc.jpeg" alt="Lomba">
+    <div class="wrap">
+        <header>
+            <div class="brand">
+                <div class="logo">PA</div>
+                <div>
+                    <h1>Petra Antonio Gerald</h1>
+                    <p>Junior Fullstack Developer</p>
                 </div>
-                <div class="card-content">
-                    <h1>Juara 1 LCC</h1>
-                    <div class="desc-diri">
-                        <p>Lomba LCC Tingkat Provinsi</p>
+            </div>
+        </header>
+        
+        <main>
+            <!-- Left column - Profile -->
+            <aside class="card">
+                <img src="images/me.jpg" alt="Petra Antonio Gerald" class="profile-pic">
+                <h2 class="name">Petra Antonio Gerald</h2>
+                <p class="role">Junior Fullstack Developer</p>
+                
+                <div class="contact-list">
+                    <div class="chip">✉ petraantonio351@gmail.com</div>
+                    <div class="chip">📱 +62 877 8769 16747</div>
+                </div>
+                
+                <div class="skills">
+                    <h3>Keahlian</h3>
+                    <div class="skill-list">
+                        <span class="skill">PHP</span>
+                        <span class="skill">MySQL</span>
+                        <span class="skill">JavaScript</span>
+                        <span class="skill">Python</span>
+                        <span class="skill">Java</span>
+                        <span class="skill">HTML/CSS</span>
+                        <span class="skill">SQLite</span>
+                        <span class="skill">IoT</span>
+                        <span class="skill">UI/UX</span>
                     </div>
                 </div>
-            </div>
-
-            <!--Prestasi 2-->
-            <div class="card-prestasi">
-                <div class="card-pasfoto">
-                    <img src="images/pas foto petra (1).png" alt="Foto Lomba">
-                </div>
-                <div class="card-content">
-                    <h1>Juara 1 LCC</h1>
-                    <div class="desc-diri">
-                        <p>Lomba LCC Tingkat Provinsi</p>
-                    </div>
-                </div>
-            </div>
-
-            <!--Prestasi 3-->
+            </aside>
             
-        </div>
-        <button class="scroll-btn right" onclick="scrollKanan()">&#9654;</button>
+            <!-- Right column - Content -->
+            <section>
+                <div class="card section">
+                    <h2>Proyek</h2>
+                    <div class="projects">
+                        <article class="project">
+                            <h3>Sistem Inventory Barang</h3>
+                            <p>Website untuk mengelola stok barang dengan fitur CRUD lengkap dan laporan inventory.</p>
+                            <div class="meta">Tech: PHP, MySQL, HTML/CSS</div>
+                        </article>
+                        
+                        <article class="project">
+                            <h3>Web Absensi Guru</h3>
+                            <p>Absensi berbasis web untuk memudahkan rekap kehadiran guru dan cetak laporan.</p>
+                            <div class="meta">Tech: PHP, SQLite, JavaScript</div>
+                        </article>
+                        
+                        <article class="project">
+                            <h3>Music Player</h3>
+                            <p>Aplikasi pemutar musik sederhana dengan fitur playlist dan kontrol playback.</p>
+                            <div class="meta">Tech: Java, UI/UX</div>
+                        </article>
+                        
+                        <article class="project">
+                            <h3>File Organizer</h3>
+                            <p>Aplikasi untuk mengelompokkan dan mengatur file berdasarkan tipe dan tanggal.</p>
+                            <div class="meta">Tech: Python</div>
+                        </article>
+                    </div>
+                </div>
+                
+                <div class="card section">
+                    <h2>Prestasi & Penghargaan</h2>
+                    <div class="achieve-wrapper">
+                        <div class="controls">
+                            <button id="prevBtn">◀</button>
+                        </div>
+                        <div class="carousel" id="carousel">
+                            <div class="slide">
+                                <h4>Samsung Innovation Campus (SIC)</h4>
+                                <p>Top 250 dari 4.000 peserta (6.25%) — Kompetisi Pemrograman dan IoT.</p>
+                            </div>
+                            
+                            <div class="slide">
+                                <h4>Juara 1 LCC</h4>
+                                <p>Juara 1 pada LCC tingkat provinsi.</p>
+                            </div>
+                            
+                            <div class="slide">
+                                <h4>PUBDEKDOK — OSIS</h4>
+                                <p>Pengurus aktif (2024–2025).</p>
+                            </div>
+
+                            <div class="slide">
+                                <h4>Multimedia — GKII Bengkulu</h4>
+                                <p>Pengurus aktif (2023–2025).</p>
+                            </div>
+
+                        </div>
+                        <div class="controls">
+                            <button id="nextBtn">▶</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card section">
+                    <h2>Hubungi Saya</h2>
+                    <p style="color:var(--muted)">Tertarik bekerja sama atau berdiskusi? Hubungi saya:</p>
+                    <div class="contact-links">
+                        <a class="icon" href="mailto:petraantonio351@gmail.com">✉ Email</a>
+                        <a class="icon" href="https://github.com/AntonioGerald" target="_blank">🐙 GitHub</a>
+                    </div>
+                </div>
+            </section>
+        </main>
+        
+        <footer>
+            <p>© Petra Antonio Gerald • Junior Fullstack Developer • SMKN 1 Kota Bengkulu</p>
+        </footer>
     </div>
+    
     <script src="script.js"></script>
 </body>
-
-<footer>
-    <a href="https://www.instagram.com/petra_.antonio?igsh=OXlsdHk0d2F4dmI4">
-        <img src="images/instagram.png" alt="instagram">
-    </a>
-    <a href="https://www.youtube.com/@VexterV?sub_confirmation=1">
-        <img src="images/youtube.png" alt="youtube">
-    </a>
-</footer>
 </html>
